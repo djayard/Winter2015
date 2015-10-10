@@ -1,0 +1,44 @@
+WINDOWS:
+    1) Download the cmake gui for Windows,                  http://www.cmake.org/download/
+    2) Download the GTK library, I used all-in-one bundle,  http://www.gtk.org/download/win32.php
+        Extract it somewere
+	
+    3) Have MingW,
+            you probably have it through QT             C:\Qt\Tools\mingw491_32
+            or, you need to download it,                http://sourceforge.net/projects/mingw/files/
+	
+	4) Go to the Windows system panel,		    Control Panel\System and Security\System
+        Click on 'advance system settings',
+        Click on 'Environment Variables',
+        Under user variable,
+            modify the PATH variable (or create it)
+            add the bin directories of mingw and GTK,
+                For example,
+                    Variable name: PATH
+                    Variable value: C:\GTK\bin; C:\Qt\Tools\mingw491_32\bin
+
+        Be sure to hit OK to save the environment settings
+
+LINUX and MAC:
+    1) get the cmake gui installed through your terminal/command-prompt
+         Example:
+            for Mac, sudo port install cmake +gui
+            for Ubuntu, sudo apt-get install cmake-gui
+
+    2) You may need to install other packages if cmake complains of missing
+        dependencies during Configuration
+
+For all:
+    1) Download fluidsynth, http://sourceforge.net/projects/fluidsynth/files/
+        Unzip the folder
+    2) Launch the CMake gui,
+    3) In CMake, for source directory, select the fluidsynth-1.1.6 folder.
+    4) In CMake, for build directory, pick any folder, but I recommend selecting an empty folder.
+    5) In CMake, press the configure button,
+        on Windows, select MinGW Makefiles
+        on Mac and Linux, select UNIX Makefiles
+    6) If no errors, hit Generate.
+    7) In a terminal or command prompt, navigate to the build directory you selected
+    8)  On Linux and Mac, enter command:	make install
+        On Windows, enter command:		mingw32-make install
+    9) Done! Try to compile fortedit.pro in QT.

@@ -1,0 +1,9 @@
+[Map Title:String]
+[Tileset DAT path:String]
+[AI Script path:String]
+[Sound Set:String]
+[Width:Unsigned] [Height:Unsigned]
+[(Width + 2) x (Height + 2) matrix of 'B', 'R' or 'Y' to signify blue team, red team and yellow team respectively. Spaces are inaccessible territory]
+[Number of Castles:Unsigned]
+<For each castle>
+	[Castle X coordinate:Unsigned] [Castle Y coordinate:Unsigned]

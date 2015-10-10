@@ -1,0 +1,40 @@
+/*
+  A sound set is a simple .dat file that lists the locations of sound files to use for a map.
+  March 7 2015 UPDATE: the soundSet now ends with an array of floats indicating the desired volume of each sound.
+		       This follows the model of volume being a float in the Linux source files of the game.
+		       There will always be 25 floats (to match the number of sounds in master branch of the Linux version of the game).
+		       1.0 is equivalent to normal or 100%. 
+		       Values are too range from 0.0 to 3.0.
+  Note: except for the Map Title, strings may be empty, which causes extra blank lines in the soundSet dat. 
+  A blank line where text should be is the indication to use the default option for that sound.
+*/
+[Map Title:String]
+
+[placeMIDI:String]
+[rebuildMIDI:String]
+[tapsMIDI:String]
+[winMIDI:String]
+
+[aimWAV:String]
+[cannon0WAV:String]
+[cannon1WAV:String]
+[ceasefireWAV:String]
+[explosion0WAV:String]
+[explosion1WAV:String]
+[explosion2WAV:String]
+[explosion3WAV:String]
+[fireWAV:String]
+[groundexplosion0WAV:String]
+[groundexplosion1WAV:String]
+[gustWAV:String]
+[placeWAV:String]
+[readyWAV:String]
+[tickWAV:String]
+[tockWAV:String]
+[triumphWAV:String]
+[waterexplosion0WAV:String]
+[waterexplosion1WAV:String]
+[waterexplosion2WAV:String]
+[waterexplosion3WAV:String]
+
+[volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float] [volume:float]

@@ -1,0 +1,2806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MusicProperties</class>
+ <widget class="QWidget" name="MusicProperties">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>245</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>227</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="text">
+      <string>MIDI Sounds</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="midiArea">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>227</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>284</width>
+        <height>374</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="8" column="0">
+        <widget class="QSlider" name="volume2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>place:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QToolButton" name="playButton0">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QToolButton" name="stopButton0">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QToolButton" name="browseButton0">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>rebuild:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label1">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QToolButton" name="playButton1">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QToolButton" name="browseButton2">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QToolButton" name="stopButton3">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QToolButton" name="browseButton3">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QToolButton" name="stopButton2">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>win:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QToolButton" name="playButton3">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QToolButton" name="browseButton1">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QToolButton" name="playButton2">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QToolButton" name="stopButton1">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label2">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label3">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>taps:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QSlider" name="volume1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QSlider" name="volume0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QSlider" name="volume3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>227</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>WAV Sounds</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="wavArea">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>227</width>
+       <height>134</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>284</width>
+        <height>1904</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="43" column="0">
+        <widget class="QSlider" name="volume18">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="46" column="0">
+        <widget class="QSlider" name="volume19">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="49" column="0">
+        <widget class="QSlider" name="volume20">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="52" column="0">
+        <widget class="QSlider" name="volume21">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="55" column="0">
+        <widget class="QSlider" name="volume22">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="58" column="0">
+        <widget class="QSlider" name="volume23">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="25" column="0">
+        <widget class="QSlider" name="volume12">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="28" column="0">
+        <widget class="QSlider" name="volume13">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="31" column="0">
+        <widget class="QSlider" name="volume14">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="34" column="0">
+        <widget class="QSlider" name="volume15">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="40" column="0">
+        <widget class="QSlider" name="volume17">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="37" column="0">
+        <widget class="QSlider" name="volume16">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="44" column="2">
+        <widget class="QToolButton" name="stopButton18">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="26" column="1">
+        <widget class="QToolButton" name="playButton12">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="26" column="2">
+        <widget class="QToolButton" name="stopButton12">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="47" column="1">
+        <widget class="QToolButton" name="playButton19">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="44" column="3">
+        <widget class="QToolButton" name="browseButton18">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="44" column="1">
+        <widget class="QToolButton" name="playButton18">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="38" column="1">
+        <widget class="QToolButton" name="playButton16">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="62" column="3">
+        <widget class="QToolButton" name="browseButton24">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="62" column="2">
+        <widget class="QToolButton" name="stopButton24">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="50" column="1">
+        <widget class="QToolButton" name="playButton20">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="53" column="1">
+        <widget class="QToolButton" name="playButton21">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="53" column="2">
+        <widget class="QToolButton" name="stopButton21">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="50" column="3">
+        <widget class="QToolButton" name="browseButton20">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="50" column="2">
+        <widget class="QToolButton" name="stopButton20">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="56" column="2">
+        <widget class="QToolButton" name="stopButton22">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="56" column="1">
+        <widget class="QToolButton" name="playButton22">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="53" column="3">
+        <widget class="QToolButton" name="browseButton21">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="56" column="3">
+        <widget class="QToolButton" name="browseButton22">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="59" column="1">
+        <widget class="QToolButton" name="playButton23">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="59" column="2">
+        <widget class="QToolButton" name="stopButton23">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="59" column="3">
+        <widget class="QToolButton" name="browseButton23">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="62" column="1">
+        <widget class="QToolButton" name="playButton24">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QSlider" name="volume4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QSlider" name="volume6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QSlider" name="volume5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QSlider" name="volume7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QSlider" name="volume8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QSlider" name="volume9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="0">
+        <widget class="QSlider" name="volume10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="0">
+        <widget class="QSlider" name="volume11">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="2">
+        <widget class="QToolButton" name="stopButton9">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="3">
+        <widget class="QToolButton" name="browseButton9">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="3">
+        <widget class="QToolButton" name="browseButton8">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="2">
+        <widget class="QToolButton" name="stopButton8">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QToolButton" name="playButton9">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QToolButton" name="playButton8">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="1">
+        <widget class="QToolButton" name="playButton10">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="47" column="3">
+        <widget class="QToolButton" name="browseButton19">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="47" column="2">
+        <widget class="QToolButton" name="stopButton19">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="47" column="0">
+        <widget class="QLabel" name="label19">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="48" column="0">
+        <widget class="QLabel" name="label_46">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>triumph:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="50" column="0">
+        <widget class="QLabel" name="label20">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="36" column="0">
+        <widget class="QLabel" name="label_50">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>place:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="26" column="0">
+        <widget class="QLabel" name="label12">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="39" column="0">
+        <widget class="QLabel" name="label_36">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ready:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="0">
+        <widget class="QLabel" name="label10">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="0">
+        <widget class="QLabel" name="label11">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="24" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>fire:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="27" column="0">
+        <widget class="QLabel" name="label_38">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>groundexplosion0:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="32" column="0">
+        <widget class="QLabel" name="label14">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="33" column="0">
+        <widget class="QLabel" name="label_33">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>gust:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="label9">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="0">
+        <widget class="QLabel" name="label_37">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>explosion3:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="30" column="0">
+        <widget class="QLabel" name="label_32">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>groundexplosion1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="35" column="0">
+        <widget class="QLabel" name="label15">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="38" column="0">
+        <widget class="QLabel" name="label16">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>explosion2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="41" column="0">
+        <widget class="QLabel" name="label17">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="42" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>tick:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="44" column="0">
+        <widget class="QLabel" name="label18">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="45" column="0">
+        <widget class="QLabel" name="label_41">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>tock:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="29" column="0">
+        <widget class="QLabel" name="label13">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="62" column="0">
+        <widget class="QLabel" name="label24">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="59" column="0">
+        <widget class="QLabel" name="label23">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="51" column="0">
+        <widget class="QLabel" name="waterexplosion0_2">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>waterexplosion0:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="56" column="0">
+        <widget class="QLabel" name="label22">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="53" column="0">
+        <widget class="QLabel" name="label21">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="57" column="0">
+        <widget class="QLabel" name="label_48">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>waterexplosion2:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="60" column="0">
+        <widget class="QLabel" name="label_98">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>waterexplosion3:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="54" column="0">
+        <widget class="QLabel" name="label_49">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>waterexplosion1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QToolButton" name="playButton5">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QToolButton" name="stopButton5">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QToolButton" name="browseButton5">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>aim:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>cannon0:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label5">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QToolButton" name="browseButton4">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label6">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QToolButton" name="stopButton4">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QToolButton" name="playButton4">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_35">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>cannon1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_18">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ceasefire:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label7">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>explosion0:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label8">
+         <property name="text">
+          <string>Default</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="label_23">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>explosion1:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="35" column="3">
+        <widget class="QToolButton" name="browseButton15">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="29" column="1">
+        <widget class="QToolButton" name="playButton13">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="29" column="2">
+        <widget class="QToolButton" name="stopButton13">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="32" column="3">
+        <widget class="QToolButton" name="browseButton14">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="32" column="1">
+        <widget class="QToolButton" name="playButton14">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="29" column="3">
+        <widget class="QToolButton" name="browseButton13">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="35" column="2">
+        <widget class="QToolButton" name="stopButton15">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="35" column="1">
+        <widget class="QToolButton" name="playButton15">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="32" column="2">
+        <widget class="QToolButton" name="stopButton14">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="26" column="3">
+        <widget class="QToolButton" name="browseButton12">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="38" column="3">
+        <widget class="QToolButton" name="browseButton16">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="41" column="1">
+        <widget class="QToolButton" name="playButton17">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="41" column="2">
+        <widget class="QToolButton" name="stopButton17">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="41" column="3">
+        <widget class="QToolButton" name="browseButton17">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="38" column="2">
+        <widget class="QToolButton" name="stopButton16">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="3">
+        <widget class="QToolButton" name="browseButton10">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="1">
+        <widget class="QToolButton" name="playButton11">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="3">
+        <widget class="QToolButton" name="browseButton11">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="2">
+        <widget class="QToolButton" name="stopButton11">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="2">
+        <widget class="QToolButton" name="stopButton10">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QToolButton" name="playButton6">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QToolButton" name="browseButton6">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QToolButton" name="playButton7">
+         <property name="toolTip">
+          <string>Play Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/play-button.png</normaloff>:/tool-icons/res/play-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QToolButton" name="stopButton6">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="2">
+        <widget class="QToolButton" name="stopButton7">
+         <property name="toolTip">
+          <string>Stop Audio</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/stop-button.png</normaloff>:/tool-icons/res/stop-button.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="3">
+        <widget class="QToolButton" name="browseButton7">
+         <property name="toolTip">
+          <string>Browse for File</string>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/tool-icons/res/browse-icon.png</normaloff>:/tool-icons/res/browse-icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="61" column="0">
+        <widget class="QSlider" name="volume24">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Volume</string>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>5</number>
+         </property>
+         <property name="pageStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="sliderPosition">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>midiArea</zorder>
+  <zorder>wavArea</zorder>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

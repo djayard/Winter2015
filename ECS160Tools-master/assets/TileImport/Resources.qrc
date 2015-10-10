@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/2DTerrain.dat</file>
+    </qresource>
+</RCC>

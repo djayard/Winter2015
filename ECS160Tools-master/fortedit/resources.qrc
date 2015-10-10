@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/tool-icons">
+        <file>res/tool-select.png</file>
+        <file>res/tool-terrain.png</file>
+        <file>res/tool-territory.png</file>
+        <file>res/browse-icon.png</file>
+        <file>res/tool-object.png</file>
+        <file>res/tool-audio.png</file>
+        <file>res/play-button.png</file>
+        <file>res/stop-button.png</file>
+    </qresource>
+    <qresource prefix="/default-maps">
+        <file>res/new.map</file>
+    </qresource>
+    <qresource prefix="/button-icons">
+        <file>res/lua-button.png</file>
+    </qresource>
+</RCC>

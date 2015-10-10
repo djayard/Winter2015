@@ -1,0 +1,46 @@
+There are two files that make up a complete tileset. The .dat file will describe what tiles are available in the tileset and the .png file will give the actual tile pixel data.
+
+Tile size is currently set at 12x12 pixels.
+
+tileset.dat {
+	[Tileset PNG Path:String]
+	[Number of distinct tiles in set:Unsigned, >=30]
+	<For each distinct tile>
+		[Tile name:String]
+}
+
+tileset.png {
+	Tileset PNGs will have each distinct tile in the order specified above, specified in a vertical column.
+}
+
+Standard tilesets MUST include the following 30 tile types:
+grass-even
+grass-odd
+shore-n-even
+shore-n-odd
+shore-ne-even
+shore-ne-odd
+shore-e-even
+shore-e-odd
+shore-se-even
+shore-se-odd
+shore-s-even
+shore-s-odd
+shore-sw-even
+shore-sw-odd
+shore-w-even
+shore-w-odd
+shore-nw-even
+shore-nw-odd
+shore-ne
+shore-se
+shore-sw
+shore-nw
+shore-nesw
+shore-nwse
+water
+floor-even
+floor-blue
+floor-red
+floor-yellow
+hole

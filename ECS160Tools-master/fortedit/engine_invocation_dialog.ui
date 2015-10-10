@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EngineInvocationDialog</class>
+ <widget class="QDialog" name="EngineInvocationDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>243</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Invoke FortNitta</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="2" column="1">
+    <widget class="QComboBox" name="modeCombo">
+     <item>
+      <property name="text">
+       <string>Castle Select</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cannon Placement</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Battle Mode</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Rebuild Mode</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="modeLabel">
+     <property name="text">
+      <string>Start in mode</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="aiCombo">
+     <item>
+      <property name="text">
+       <string>Easy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Normal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hard</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Insane</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="aiDifficultyLabel">
+     <property name="text">
+      <string>AI Difficulty</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QCheckBox" name="windCheck">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QComboBox" name="castleIndexCombo"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="castleIndexLabel">
+     <property name="text">
+      <string>Castle Index (Optional)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="windLabel">
+     <property name="text">
+      <string>Wind</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="executablePath">
+     <property name="text">
+      <string>&lt;unset&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="locateButton">
+     <property name="text">
+      <string>Locate</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>FortNitta Executable</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EngineInvocationDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EngineInvocationDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
